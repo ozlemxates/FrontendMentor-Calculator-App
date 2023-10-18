@@ -3,10 +3,10 @@ import './Header.css';
 
 const Header = () => {
     return (
-        <div className="container">
+        <main>
             <div className="text">
-                <h4>calc</h4>
-                <h5>THEME</h5>
+                <h1>calc</h1>
+                <h4>THEME</h4>
             </div>
             <div className="select-theme">
                 <div className="label">
@@ -21,7 +21,7 @@ const Header = () => {
                 </div>
             </div>
           
-        </div>
+        </main>
       
     )
 }

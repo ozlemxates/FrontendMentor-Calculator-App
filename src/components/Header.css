@@ -1,14 +1,49 @@
-.container {
+main {
     display: flex;
+    color: hsl(0, 0%, 100%);
+    
 }
 
 .text {
     display: flex;
+    color: hsl(0, 0%, 100%);
 }
 
-  
+h1 {
+    margin:0 225px 10px 0;
+}
 
-#theme1, #theme2, #theme3 {
-    /* appearance: none; */
+.select-theme{
+    margin: 0 0 0 1em;
+}
 
+.label {
+    margin-bottom: 7px;
+}
+
+label {
+    margin: 7px;
+}
+
+.input {
+    background: hsl(223, 31%, 20%);
+    border-radius: 10px;
+}
+
+#theme1::after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    background-color: hsl(6, 63%, 50%);
+    position: absolute;
+    border-radius: 50%;
+    top: 50%; /* Dikey hizalama, öğenin yarısında olacak */
+    transform: translate(-5%, -50%); /* Merkezleme */
+}
+
+
+
+
+  #theme1, #theme2, #theme3 {
+    appearance: none;
 }
