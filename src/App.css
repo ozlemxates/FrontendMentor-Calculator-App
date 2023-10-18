@@ -1,11 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-
-}
-
 :root {
     /* ### Theme 1 */
 
@@ -33,3 +25,12 @@
     
 }
 
+.App {
+    background: var(--main-background);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

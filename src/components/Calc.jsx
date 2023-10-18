@@ -3,7 +3,7 @@ import './Calc.css';
 
 const Calc = () => {
     return (
-       
+       <div></div>
     )
 }
 

@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+}
+
+.text {
+    display: flex;
+}
+
+  
+
+#theme1, #theme2, #theme3 {
+    /* appearance: none; */
+
+}
