@@ -1,4 +1,4 @@
-main {
+.Header {
     display: flex;
     color: hsl(0, 0%, 100%);
     
@@ -37,12 +37,8 @@ label {
     background-color: hsl(6, 63%, 50%);
     position: absolute;
     border-radius: 50%;
-    top: 50%; /* Dikey hizalama, öğenin yarısında olacak */
-    transform: translate(-5%, -50%); /* Merkezleme */
+    transform: translate(-2%, -80%); 
 }
-
-
-
 
   #theme1, #theme2, #theme3 {
     appearance: none;

@@ -3,7 +3,9 @@ import './Result.css';
 
 const Result = () => {
     return (
-        <div></div>
+        <div className="Result">
+            <input className="bar" type="number" />
+        </div>
        
     )
 }

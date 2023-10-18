@@ -1,0 +1,18 @@
+.Result {
+    background-color: hsl(224, 36%, 15%);
+    border-radius: 10px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.bar {
+  background: transparent;
+  text-align: right;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 32px;
+  color: white;
+  font-weight: 700;
+}
