@@ -20,6 +20,7 @@
     color: hsl(221, 14%, 31%);
     font-weight: 700;
     font-size: 32px;
+    cursor: pointer;
 }
 
 .grid-item.span-2 {

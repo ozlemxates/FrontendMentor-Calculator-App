@@ -1,15 +1,13 @@
 import './App.css';
 import Header from './components/Header';
-import Result from './components/Result';
-import Calc from './components/Calc';
+import Calculator from './components/Calculator';
 
 function App() {
     return (
         <body className='App'>
             <div>
                 <Header />
-                <Result />
-                <Calc />
+                <Calculator />
             </div>
         </body>
     )

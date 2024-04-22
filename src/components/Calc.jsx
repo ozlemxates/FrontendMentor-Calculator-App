@@ -1,32 +1,35 @@
 import React from "react";
-import './Calc.css';
+import "./Calc.css";
 
-const Calc = () => {
+const Calc = ({ onKeyPress }) => {
+    const handleOperation = (operation) => {
+        onKeyPress(operation);
+    };
+
     return (
-    <main className="Calc">
-        <div class="grid-container">
-            <div class="grid-item">7</div>
-            <div class="grid-item">8</div>
-            <div class="grid-item">9</div>
-            <div class="grid-item cyan-bg">DEL</div>
-            <div class="grid-item">4</div>
-            <div class="grid-item">5</div>
-            <div class="grid-item">6</div>
-            <div class="grid-item">+</div>
-            <div class="grid-item">1</div>
-            <div class="grid-item">2</div>
-            <div class="grid-item">3</div>
-            <div class="grid-item">-</div>
-            <div class="grid-item">.</div>
-            <div class="grid-item">0</div>
-            <div class="grid-item">/</div>
-            <div class="grid-item">x</div>
-            <div class="grid-item span-2 cyan-bg">RESET</div>
-            <div class="grid-item span-2 red-bg">=</div>
-        </div>
-    </main>
-       
-    )
-}
+        <main className="Calc">
+            <div className="grid-container">
+                <div className="grid-item" onClick={() => handleOperation("7")}>7</div>
+                <div className="grid-item" onClick={() => handleOperation("8")}>8</div>
+                <div className="grid-item" onClick={() => handleOperation("9")}>9</div>
+                <div className="grid-item cyan-bg" onClick={() => handleOperation("DEL")}>DEL</div>
+                <div className="grid-item" onClick={() => handleOperation("4")}>4</div>
+                <div className="grid-item" onClick={() => handleOperation("5")}>5</div>
+                <div className="grid-item" onClick={() => handleOperation("6")}>6</div>
+                <div className="grid-item" onClick={() => handleOperation("+")}>+</div>
+                <div className="grid-item" onClick={() => handleOperation("1")}>1</div>
+                <div className="grid-item" onClick={() => handleOperation("2")}>2</div>
+                <div className="grid-item" onClick={() => handleOperation("3")}>3</div>
+                <div className="grid-item" onClick={() => handleOperation("-")}>-</div>
+                <div className="grid-item" onClick={() => handleOperation(".")}>.</div>
+                <div className="grid-item" onClick={() => handleOperation("0")}>0</div>
+                <div className="grid-item" onClick={() => handleOperation("/")}>/</div>
+                <div className="grid-item" onClick={() => handleOperation("*")}>x</div>
+                <div className="grid-item span-2 cyan-bg" onClick={() => handleOperation("RESET")}>RESET</div>
+                <div className="grid-item span-2 red-bg" onClick={() => handleOperation("=")}>=</div>
+            </div>
+        </main>
+    );
+};
 
 export default Calc;
