@@ -21,6 +21,11 @@
     font-weight: 700;
     font-size: 32px;
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.wht-hover:hover {
+    background-color: white;
 }
 
 .grid-item.span-2 {
@@ -33,7 +38,15 @@
     color: white;
 }
 
+.cyan-bg:hover {
+    background-color: hsl(225deg 15.19% 59.64%);
+}
+
 .red-bg {
     background-color: hsl(6, 63%, 50%);
     color: white;
 } 
+
+.red-bg:hover {
+    background-color: hsl(6deg 48.49% 53.93%);
+}
