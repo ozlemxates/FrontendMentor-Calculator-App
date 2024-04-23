@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Header.css';
 
 const Header = () => {
-    const [selectTheme, setSelectTheme] = useState(null);
+    const [selectTheme, setSelectTheme] = useState('theme1');
 
     const handleThemeChange = (theme) => {
         setSelectTheme(theme);
@@ -26,6 +26,7 @@ const Header = () => {
                             type="radio" 
                             checked={selectTheme === theme} 
                             onChange={() => handleThemeChange(theme)} 
+                            className={selectTheme === theme ? 'checked' : ''}
                         />
                     ))}
                 </div>
