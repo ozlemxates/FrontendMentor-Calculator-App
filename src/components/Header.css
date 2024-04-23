@@ -17,7 +17,6 @@
 
 .radio-buttons {
     display: flex;
-    gap: 3px;
     background-color: hsl(223, 31%, 20%);
     height: 25px;
     width: 70px;
@@ -53,7 +52,6 @@
 #theme3::before {
     content: "3";
 }
-
 
 #theme1::after {
     content: "";
