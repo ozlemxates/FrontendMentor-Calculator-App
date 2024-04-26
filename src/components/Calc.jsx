@@ -24,7 +24,7 @@ const Calc = ({ onKeyPress }) => {
                 <div className="grid-item wht-hover" onClick={() => handleOperation(".")}>.</div>
                 <div className="grid-item wht-hover" onClick={() => handleOperation("0")}>0</div>
                 <div className="grid-item wht-hover" onClick={() => handleOperation("/")}>/</div>
-                <div className="grid-item wht-hover" onClick={() => handleOperation("*")}>x</div>
+                <div className="grid-item wht-hover" onClick={() => handleOperation("x")}>x</div>
                 <div className="grid-item span-2 cyan-bg" onClick={() => handleOperation("RESET")}>RESET</div>
                 <div className="grid-item span-2 red-bg" onClick={() => handleOperation("=")}>=</div>
             </div>

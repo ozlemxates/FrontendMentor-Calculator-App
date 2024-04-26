@@ -10,6 +10,14 @@ const Calculator = () => {
         if (value === "x") {
             processedValue = "*";
         }
+
+        const operators = ["+", "-", "*", "/"];
+        const lastChar = input[input.length - 1];
+
+        if (operators.includes(processedValue) && operators.includes(lastChar)) {
+            setInput(prevInput => prevInput.slice(0, -1) + processedValue);
+            return;
+        }
         
         switch (processedValue) {
             case "DEL":
