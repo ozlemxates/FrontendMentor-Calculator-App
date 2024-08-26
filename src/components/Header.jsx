@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import './Header.css';
+import styledimport, { ThemeProvider } from "styled-components";
+
 
 const Header = () => {
     const [selectTheme, setSelectTheme] = useState('theme1');
