@@ -11,7 +11,7 @@ const Calculator = () => {
             processedValue = "*";
         }
 
-        const operators = ["+", "-", "*", "/"];
+        const operators = ["+", "-", "*", "/", "."];
         const lastChar = input[input.length - 1];
 
         if (operators.includes(processedValue) && operators.includes(lastChar)) {
