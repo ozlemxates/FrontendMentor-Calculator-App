@@ -7,11 +7,8 @@ const Calculator = () => {
     const [input, setInput] = useState("");
     const handleKeyPress = (value) => {
         let processedValue = value;
-        if (value === "x") {
-            processedValue = "*";
-        }
 
-        const operators = ["+", "-", "*", "/", "."];
+        const operators = ["+", "-", "x", "/", "."];
         const lastChar = input[input.length - 1];
 
         if (operators.includes(processedValue) && operators.includes(lastChar)) {
@@ -28,14 +25,14 @@ const Calculator = () => {
                 break;
             case "=":
                 try {
-                    const result = math.evaluate(input);
+                    const result = math.evaluate(input.replace(/x/g,"*"));
                     setInput(result.toString());
                 } catch (error) {
                     setInput("Error");
                 }
                 break;
             default:
-                setInput(prevInput => prevInput + processedValue);
+                setInput(prevInput => prevInput + value);
                 break;
         }
     };
